@@ -1,0 +1,21 @@
+{
+  "name": "helsingborg-stad/modularity-checklist",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jonatan Hanson",
+      "email": "jonatan.hanson@hiq.se"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "helsingborg-stad/modularity-checklist": ">=0.0.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/helsingborg-stad/modularity-checklist.git"
+    }
+  ]
+}
