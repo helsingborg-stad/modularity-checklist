@@ -13,8 +13,8 @@
  * Domain Path:       /languages
  */
 
- // Protect agains direct file access
-if (! defined('WPINC')) {
+// Protect agains direct file access
+if (!defined('WPINC')) {
     die;
 }
 
@@ -43,8 +43,10 @@ add_action('plugins_loaded', function () {
     ));
     $acfExportManager->import();
 
-    modularity_register_module(
-        MODULARITYCHECKLIST_PATH . 'source/php/Module',
-        'Module'
-    );
+    if (function_exists('modularity_register_module')) {
+        modularity_register_module(
+            MODULARITYCHECKLIST_PATH . 'source/php/Module',
+            'Module'
+        );
+    }
 });
